@@ -1,24 +1,21 @@
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 
 import 'firebase/auth';
 import 'firebase/database';
 
-
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_API_KEY,
-    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-    databaseURL:process.env.REACT_APP_DATABASE_URL,
-    projectId: process.env.REACT_APP_PROJECT_ID,
-    storageBucket:process.env.REACT_APP_STORAGE_BUCKET,
-    messagingSenderId:process.env.REACT_APP_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_APP_ID
-  };
+  apiKey: "AIzaSyA7U1Pi2nIP3kvwxucA7Bfr-Qy2uhsAh_4",
+  authDomain: "letmeask-ba2eb.firebaseapp.com",
+  databaseURL: "https://letmeask-ba2eb-default-rtdb.firebaseio.com",
+  projectId: "letmeask-ba2eb",
+  storageBucket: "letmeask-ba2eb.appspot.com",
+  messagingSenderId: "642214255662",
+  appId: "1:642214255662:web:15f42d901d8c0ed70593bf"
+};
 
+firebase.initializeApp(firebaseConfig);
 
-  firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const database = firebase.database();
 
-   const auth = firebase.auth();
-   const database = firebase.database();
-
-   export {firebase, auth, database}
-  
+export { firebase, auth, database }
