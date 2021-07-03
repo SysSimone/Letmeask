@@ -11,9 +11,16 @@
   justify-content: space-between;
   align-items: center;
   
-  
   >img {
     max-height: 45px;
+  }
+  >div {
+    display: flex;
+    gap: 16px;
+
+    button {
+      height: 40px;
+    }
   }
 }
 }
@@ -52,6 +59,7 @@ main{
       resize: vertical;
       min-height: 130px;
     }
+    
     .form-footer{
       display: flex;
       justify-content: space-between;
@@ -67,7 +75,8 @@ main{
         height: 32px;
         border-radius: 50%;
       }
-      span {
+     
+       span {
         margin-left: 8px;
         color: #29292e;
         font-weight: 500;
@@ -89,7 +98,10 @@ main{
         font-weight: 500;
         cursor: pointer;
       }
-      }
     }
   }
+  .question-list {
+    margin-top: 32px;
+  }
+}
 }
